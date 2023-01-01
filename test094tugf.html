@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title></title>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  @font-face {
+    font-family: "myFirstFont";
+    src: url("NexaFunny.ttf");
+}
+</style>
+</head>
+<div class = "weboTest">
+<!--<body style="background: radial-gradient(#0EA09F, #471367);">>-->
+    <div class = "basedtest"></div>
+</div>
+    <div class = "one"></div>
+    <div class = "two"></div>
+    <div class = "three"></div>
+    <div class = "four"></div>
+    <div class = "five"></div>
+    <div class = "background"></div>
+    <body>
+    <div id = "fontThing">2022 NEW YEAR COUNTDOWN FOR PACIFIC!</div>
+    <p id="demo"></p>
+<!--    <div id = "overDiv"> -->
+        
+        <div id="parentdiv"></div>
+        <div id="parentdiv1"></div>
+    </div>
+  <canvas id="canvas"></canvas>
+</body>
+
+  <script>
+      /*
+      var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext("2d");
+
+    canvas.width = 1920;
+    canvas.height = 1080;
+
+
+    var background = new Image();
+    background.src = "https://raw.githubusercontent.com/krishnadas49540/krishnadassite/master/img/svgdrawing0445455454544444345544343485.svg";
+
+    background.onload = function(){
+        ctx.drawImage(background,0,0);   
+    }
+    */
+  </script>
+  <style>
+    .weboTest{
+        perspective: 1000;
+    }
+    .background{
+      /*background: url(gwwhhfwhfwhfwhwhwdhfdwdhwdhwdh.png) right bottom, radial-gradient(#0EA09F, #3C2E73);background-size: 100%;*/
+      background: radial-gradient(#0EA09F, #3C2E73);
+      background-size: 100%;
+      z-index: -100;
+      height: 1080px;
+      width: 1920px;
+      position: absolute;
+    }
+    .basedtest{
+        background: url(finalrender/based.png) right bottom;
+        background-size: 100%;
+        height: 1080px;
+        width: 1920px;
+        position: absolute;
+        animation: sussy 1.5s infinite;
+        animation-direction: alternate;
+        transform-origin: 0% 50%;
+    }
+    .one{
+        background: url(finalrender/1.png) right bottom;
+        background-size: 100%;
+        height: 1080px;
+        width: 1920px;
+        position: absolute;
+    }
+    .two{
+        background: url(finalrender/2.png) right bottom;
+        background-size: 100%;
+        height: 1080px;
+        width: 1920px;
+        position: absolute;
+        animation: amongus 1.5s infinite;
+        animation-direction: alternate;
+    }
+    .three{
+        background: url(finalrender/3.png) right bottom;
+        background-size: 100%;
+        height: 1080px;
+        width: 1920px;
+        position: absolute;
+    }
+    .four{
+        background: url(finalrender/4.png) right bottom;
+        background-size: 100%;
+        height: 1080px;
+        width: 1920px;
+        position: absolute;
+        animation: amongus 1.5s infinite;
+        animation-direction: alternate;
+    }
+    .five{
+        background: url(finalrender/5.png) right bottom;
+        background-size: 100%;
+        height: 1080px;
+        width: 1920px;
+        position: absolute;
+    }
+    @keyframes amongus {
+        0% {
+    transform: translate(0, 0) translateZ(0);    
+  }
+  100% {
+    transform: translate(0px, 4px) translateZ(0);
+  }
+}
+@keyframes sussy {
+    0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translateZ(200px);
+  }
+}
+    #parentdiv {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        border-radius: 150px;
+        z-index: 4;
+    }
+    
+    /*
+    .space {
+        margin:35% 0;
+    }
+    */
+    /*
+    body{
+        background: url(isometric_drawing047889.svg) right bottom;
+        background-size: 100%;
+        height: 100vh;
+        z-index: 20;
+        animation-duration: 6s;
+    }
+    */
+    @keyframes example {
+        from {left: 0px;}
+  to {left: 300px;}
+}
+    p{
+        font-size: 150px;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  font-family: "MyFirstFont";
+  color: white;
+  z-index: 9999;
+  position: absolute;
+  left: 50%;
+    /*transform: translate(-50%, 0);
+    text-align: center;
+    */
+    left: 0;
+  right: 0;
+    }
+  #demo{
+    background-color: rgba(44, 184, 175, 0.5);
+  width: 80%;
+  display: flex;
+align-items: center;
+justify-content: center;
+left: 10%;
+text-align: center;
+border-radius: 25px;
+padding: 20px;
+  }
+
+    #fontThing{
+        width: 80%;
+        display: flex;
+        background-color: rgba(44, 184, 175, 0.5);
+        font-size: 60px;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  font-family: 'MyFirstFont';
+  color: white;
+  z-index: 9999;
+  position: absolute;
+  /*left: 50%;
+    transform: translate(-50%, 0);
+    */
+  left: 10%;
+text-align: center;
+border-radius: 25px;
+padding: 20px;
+    }
+    #parentdiv1 {
+        position: absolute;
+        
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        border-radius: 150px;
+        z-index: 4;
+    }
+  
+    .div1 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #FF9A30;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 0.6s, fadeout 0.3s linear forwards 5s;
+        animation: fadein 0.3s linear forwards 0.6s, fadeout 0.3s linear forwards 5s;
+        */
+        transition: opacity 1500ms ease-in-out;
+        opacity: 0;
+        /*will-change: animation;*/
+    }
+    .div2 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #FF9A30;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 0.6s, fadeout 0.3s linear forwards 5s;
+        animation: fadein 0.3s linear forwards 0.6s, fadeout 0.3s linear forwards 5s;
+        */
+        opacity: 0;
+        /*will-change: animation;*/
+    }
+    .div3 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #FFFFFF;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 1.0s, fadeout 0.3s linear forwards 5.2s;
+        animation: fadein 0.3s linear forwards 1.0s, fadeout 0.3s linear forwards 5.2s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .eye-animation {  
+  width: 300px;
+  height: 300px;
+
+  background-image: url('/images/blinking-eye-sprite.svg');
+  background-size: 1800%, 100%;
+  background-position: left;
+  background-repeat:no-repeat;
+}
+
+@keyframes eye-fill {
+  from { 
+    background-position: left; 
+  }
+  to { 
+    background-position: right; 
+  }
+}
+    .div4 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #FFFFFF;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 1.0s, fadeout 0.3s linear forwards 5.2s;
+        animation: fadein 0.3s linear forwards 1.0s, fadeout 0.3s linear forwards 5.2s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div5 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #0A8901;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 1.4s, fadeout 0.3s linear forwards 5.4s;
+        animation: fadein 0.3s linear forwards 1.4s, fadeout 0.3s linear forwards 5.4s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div6 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #0A8901;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 1.4s, fadeout 0.3s linear forwards 5.4s;
+        animation: fadein 0.3s linear forwards 1.4s, fadeout 0.3s linear forwards 5.4s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div7 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #0A8901;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 0.4s, fadeout 0.3s linear forwards 5.4s;
+        animation: fadein 0.3s linear forwards 0.4s, fadeout 0.3s linear forwards 5.4s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div8 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #0A8901;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 0.4s, fadeout 0.3s linear forwards 5.4s;
+        animation: fadein 0.3s linear forwards 0.4s, fadeout 0.3s linear forwards 5.4s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div9 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #0A8901;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 0.4s, fadeout 0.3s linear forwards 5.4s;
+        animation: fadein 0.3s linear forwards 0.4s, fadeout 0.3s linear forwards 5.4s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div11 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #FF9A30;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 0.6s, fadeout 0.3s linear forwards 5s;
+        animation: fadein 0.3s linear forwards 0.6s, fadeout 0.3s linear forwards 5s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div12 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #FF9A30;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 0.6s, fadeout 0.3s linear forwards 5s;
+        animation: fadein 0.3s linear forwards 0.6s, fadeout 0.3s linear forwards 5s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div13 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #FFFFFF;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 1.0s, fadeout 0.3s linear forwards 5.2s;
+        animation: fadein 0.3s linear forwards 1.0s, fadeout 0.3s linear forwards 5.2s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div14 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #FFFFFF;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 1.0s, fadeout 0.3s linear forwards 5.2s;
+        animation: fadein 0.3s linear forwards 1.0s, fadeout 0.3s linear forwards 5.2s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div15 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #0A8901;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 1.4s, fadeout 0.3s linear forwards 5.4s;
+        animation: fadein 0.3s linear forwards 1.4s, fadeout 0.3s linear forwards 5.4s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div16 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color:#0A8901;
+        border-radius: 100px;
+        transition: opacity 1500ms ease-in-out;
+        /*
+        -webkit-animation: fadein 0.3s linear forwards 1.4s, fadeout 0.3s linear forwards 5.4s;
+        animation: fadein 0.3s linear forwards 1.4s, fadeout 0.3s linear forwards 5.4s;
+        */
+        opacity: 0;
+        will-change: animation;
+    }
+    .div17 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #0A8901;
+        border-radius: 100px;
+        -webkit-animation: fadein 0.3s linear forwards 0.4s, fadeout 0.3s linear forwards 5.4s;
+        animation: fadein 0.3s linear forwards 0.4s, fadeout 0.3s linear forwards 5.4s;
+        opacity: 0;
+    }
+    .div18 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #0A8901;
+        border-radius: 100px;
+        -webkit-animation: fadein 0.3s linear forwards 0.4s, fadeout 0.3s linear forwards 5.4s;
+        animation: fadein 0.3s linear forwards 0.4s, fadeout 0.3s linear forwards 5.4s;
+        opacity: 0;
+    }
+    .div19 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #0A8901;
+        border-radius: 100px;
+        -webkit-animation: fadein 0.3s linear forwards 1.6s, fadeout 0.3s linear forwards 5.4s;
+        animation: fadein 0.3s linear forwards 1.6s, fadeout 0.3s linear forwards 5.4s;
+        opacity: 0;
+    }
+    /*
+    .div10 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #0A8901;
+        border-radius: 100px;
+        -webkit-animation: fadein 0.3s linear forwards 1.8s, fadeout 0.3s linear forwards 5.45s;
+        animation: fadein 0.3s linear forwards 1.8s, fadeout 0.3s linear forwards 5.45s;
+        opacity: 0;
+    }
+    .div11 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #ac5;
+        border-radius: 100px;
+        -webkit-animation: fadein 0.3s linear forwards 2s, fadeout 0.3s linear forwards 5.5s;
+        animation: fadein 0.3s linear forwards 2s, fadeout 0.3s linear forwards 5.5s;
+        opacity: 0;
+    }
+    .div12 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #ac5;
+        border-radius: 100px;
+        -webkit-animation: fadein 0.3s linear forwards 2.2s, fadeout 0.3s linear forwards 5.55s;
+        animation: fadein 0.3s linear forwards 2.2s, fadeout 0.3s linear forwards 5.55s;
+        opacity: 0;
+    }
+    .div13 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #ac5;
+        border-radius: 100px;
+        -webkit-animation: fadein 0.3s linear forwards 2.4s, fadeout 0.3s linear forwards 5.6s;
+        animation: fadein 0.3s linear forwards 2.4s, fadeout 0.3s linear forwards 5.6s;
+        opacity: 0;
+    }
+    .div14 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #ac5;
+        border-radius: 100px;
+        -webkit-animation: fadein 0.3s linear forwards 2.6s, fadeout 0.3s linear forwards 5.65s;
+        animation: fadein 0.3s linear forwards 2.6s, fadeout 0.3s linear forwards 5.65s;
+        opacity: 0;
+    }
+    */
+    @-webkit-keyframes fadein {
+        0%{ opacity: 0; }
+        50%,100% { opacity: 1; }
+    }
+
+    @keyframes fadein {
+        0%{ opacity: 0; }
+        50%,100% { opacity: 1; }
+    }
+    @-webkit-keyframes fadeout {
+        0%{ opacity: 1; }
+        100% { opacity: 0; }
+    }
+
+    @keyframes fadeout {
+        0%{ opacity: 1; }
+        100% { opacity: 0; }
+    }
+  </style>
+  <script type = "text/javascript">
+  /*
+    setInterval(
+    function (){
+    */
+   /*
+        var max1 = 80;
+        var min1 = 51;
+        var randomNumber1 = Math.random() * (max1 - min1) + min1;
+        document.getElementById("parentdiv").style.left = randomNumber1 + "%";
+        document.getElementById("parentdiv").style.bottom = randomNumber1 + "%";
+        //document.getElementById("parentDiv").style.alignItems = "center";
+        for(var j = 1; j <=6; j++){
+            var numberOfCircles = 10;
+            var div = 360 / numberOfCircles;
+            var radius = 50+(j*20);
+            var parentdiv = document.getElementById('parentdiv');
+            var offsetToParentCenter = parseInt(parentdiv.offsetWidth / 2); //assumes parent is square
+            var offsetToChildCenter = 20;
+            var totalOffset = offsetToParentCenter - offsetToChildCenter;
+            for (var i = 1; i <= numberOfCircles; ++i) {
+                var childdiv = document.createElement('div'+j);
+                childdiv.className = 'div'+j;
+                childdiv.style.position = 'absolute';
+                var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
+                var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
+                childdiv.style.top = (y + totalOffset).toString() + "px";
+                childdiv.style.left = (x + totalOffset).toString() + "px";
+                parentdiv.appendChild(childdiv);
+            }
+        }
+        */
+    /*
+    }, 8000)
+    setInterval(
+    function (){
+    */
+   /*
+        var max2 = 50;
+        var min2 = 20;
+        var randomNumber2 = Math.random() * (max2 - min2) + min2;
+        document.getElementById("parentdiv1").style.left = randomNumber2 + "%";
+        document.getElementById("parentdiv1").style.bottom = randomNumber2 + "%";
+        //document.getElementById("parentDiv").style.alignItems = "center";
+        for(var j = 1; j <=6; j++){
+            var numberOfCircles = 10;
+            var div = 360 / numberOfCircles;
+            var radius = 50+(j*20);
+            var parentdiv = document.getElementById('parentdiv1');
+            var offsetToParentCenter = parseInt(parentdiv1.offsetWidth / 2); //assumes parent is square
+            var offsetToChildCenter = 20;
+            var totalOffset = offsetToParentCenter - offsetToChildCenter;
+            for (var i = 1; i <= numberOfCircles; ++i) {
+                var childdiv = document.createElement('div1'+j);
+                childdiv.className = 'div1'+j;
+                childdiv.style.position = 'absolute';
+                var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
+                var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
+                childdiv.style.top = (y + totalOffset).toString() + "px";
+                childdiv.style.left = (x + totalOffset).toString() + "px";
+                parentdiv.appendChild(childdiv);
+            }
+
+        }
+        */
+        /*
+    }, 12000)
+*/
+    </script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 1, 2022 00:00:00 GMT-8").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "HAPPY NEW YEAR!";
+          }
+        }, 1000);
+        </script>
+</body>
+
+</html>

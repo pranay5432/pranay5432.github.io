@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+
+    <body>
+        <div class="animation">
+          <img src="funny045874/0001.png">
+          <img src="funny045874/0002.png">
+          <img src="funny045874/0003.png">
+          <img src="funny045874/0004.png">
+          <img src="funny045874/0005.png">
+        </div>
+        <style>
+        .animation {
+            width: 30%;
+          }
+          
+          .animation img {
+            display: none;
+          }
+          
+          .animation img:first-of-type {
+            display: block;
+          }
+        </style>
+              </body>
+              
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+let aniOne = $(".animation.first img");
+let aniTwo = $(".animation.second img");
+let num1 = 0;
+let num2 = 0;
+
+function changeImg(allImg, num){
+  function main(){
+    $(allImg[num]).fadeOut(0, function(){
+
+    if(num == allImg.length -1){
+      num = 0;
+    }else {
+      num++;
+    }
+      $(allImg[num]).fadeIn(0)});
+  }
+  return main;
+}
+
+setInterval(changeImg(aniOne, num1), 0050);
+
+setInterval(changeImg(aniTwo, num2), 0050);
+        </script>
+</html>
